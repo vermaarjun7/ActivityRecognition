@@ -1,5 +1,5 @@
 
-setwd("C:\\Users\\daisywa\\SkyDrive\\Data Science\\Practical Machine Learning\\WriteUp")
+setwd("C:\\Users\\Desktop\\Practical Machine Learning\\WriteUp")
 
 library(graphics)
 library(caret)
