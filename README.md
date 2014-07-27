@@ -21,14 +21,14 @@ https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv
 
 Without the codebook of the input data nor domain knowledge of the subject, I treated the features as they are, even though the data set probably should be separated into 2 data files: point-of-time versus aggregated level, b/c the derived features look like only populated when *new_windows = “yes”*, and might be derived from the same *window_num*. Only 6 out of 152 features in *new_windows = “yes”*  with NA rate more than 95% versus 100 out of 152 features with the same threshold in *new_windows = “no”*. Anyhow, in the analysis, I focused on the 152 numeric-formatted features and treated them as they are in the input data file, i.e. excluded “window”, and time-related features.
 
-The WriteUp_Script.R (see file in the repo) was designed to do following:
+The R script in the repo was designed to do following:
 
 *  Gave a quick check of data by separating them according to new vs. old windows. (The reason was explained as above.)
 *  Cleaned up features with high missing/NA rate and those with single fixed value, i.e. variance = 0. Most of the derived features were removed in this step and left 51 features.
 * Further split *training* into two data sets: *Train* and *Test* with 70-30 split to detect overfitting.
-* Created a stratified sample to plot the features. Figure below shows 10 features out of 51. Several features were highly correlated with others. Either compressing the data or further feature selection is required. I didn't choose compressing data because it's hard to explain the components.
+* Created a stratified sample to plot the features. Several features were highly correlated with others. Either compressing the data or further feature selection is required. I didn't choose compressing data because it's hard to explain the components.
 
-![plot1 Scatterplot](plot1_scatterplot.png) 
+ 
 
 *  
 
