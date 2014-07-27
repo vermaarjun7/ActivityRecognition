@@ -1,10 +1,11 @@
 Practical Machine Learning
 =========================== 
-Course Project: Write Up
 
-### Background & Objective
+Research on activity recognition has traditionally focused on discriminating between different activities
 
-Research on activity recognition has traditionally focused on discriminating between different activities.  In this project, we try to predict the quality of executing an activity through data from accelerometers on the belt, forearm, arm, and dumbbell of 6 participants.
+### Objective
+
+To predict the quality of executing an activity through data from accelerometers on the belt, forearm, arm, and dumbbell of 6 participants.
 
 
 ### Data
@@ -22,14 +23,14 @@ Without the codebook of the input data nor domain knowledge of the subject, I tr
 
 The WriteUp_Script.R (see file in the repo) was designed to do following:
 
-* Step 0: Gave a quick check of data by separating them according to new vs. old windows. (The reason was explained as above.)
-* Step 1: Cleaned up features with high missing/NA rate and those with single fixed value, i.e. variance = 0. Most of the derived features were removed in this step and left 51 features.
-* Step 2: Further split *training* into two data sets: *Train* and *Test* with 70-30 split to detect overfitting.
-* Step 3: Created a stratified sample to plot the features. Figure below shows 10 features out of 51. Several features were highly correlated with others. Either compressing the data or further feature selection is required. I didn't choose compressing data because it's hard to explain the components.
+*  Gave a quick check of data by separating them according to new vs. old windows. (The reason was explained as above.)
+*  Cleaned up features with high missing/NA rate and those with single fixed value, i.e. variance = 0. Most of the derived features were removed in this step and left 51 features.
+* Further split *training* into two data sets: *Train* and *Test* with 70-30 split to detect overfitting.
+* Created a stratified sample to plot the features. Figure below shows 10 features out of 51. Several features were highly correlated with others. Either compressing the data or further feature selection is required. I didn't choose compressing data because it's hard to explain the components.
 
 ![plot1 Scatterplot](plot1_scatterplot.png) 
 
-* Step 4: 
+*  
 
    - Selected features through recursive feature eliminating (backward). The *Train* data set were normalized first (unnecessary step b/c random forest supposes to be invariant to the magnitude, but I've done this step, ran the selection  and it was pretty long runtime.), and then correlation was checking again through findCorrelation in *caret* package. And, then through rfeControl func = rfFunctions to calculate variable importance using random forest. Figure below suggests ~15 features probably are sufficient to give us good accuracy.
 
