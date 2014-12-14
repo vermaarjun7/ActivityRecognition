@@ -33,9 +33,7 @@ The R script in the repo was designed to do following:
 
  
 
-*  
-
-    Selected features through recursive feature eliminating (backward). The *Train* data set were normalized first (unnecessary step b/c random forest supposes to be invariant to the magnitude, but I've done this step, ran the selection  and it was pretty long runtime.), and then correlation was checking again through findCorrelation in *caret* package. And, then through rfeControl func = rfFunctions to calculate variable importance using random forest. Figure below suggests ~15 features probably are sufficient to give us good accuracy.
+* Selected features through recursive feature eliminating (backward). The *Train* data set were normalized first (unnecessary step b/c random forest supposes to be invariant to the magnitude, but I've done this step, ran the selection  and it was pretty long runtime.), and then correlation was checking again through findCorrelation in *caret* package. And, then through rfeControl func = rfFunctions to calculate variable importance using random forest. Figure below suggests ~15 features probably are sufficient to give us good accuracy.
 
 ![plot2 NumberFeatures](plot2_NumberFeatures.png)
 
