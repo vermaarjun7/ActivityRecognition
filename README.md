@@ -26,6 +26,9 @@ The R script in the repo was designed to do following:
 *  Gave a quick check of data by separating them according to new vs. old windows. (The reason was explained as above.)
 *  Cleaned up features with high missing/NA rate and those with single fixed value, i.e. variance = 0. Most of the derived features were removed in this step and left 51 features.
 * Further split *training* into two data sets: *Train* and *Test* with 70-30 split to detect overfitting.
+
+![plot1 scatterplot](plot1_scatterplot.png)
+
 * Created a stratified sample to plot the features. Several features were highly correlated with others. Either compressing the data or further feature selection is required. I didn't choose compressing data because it's hard to explain the components.
 
  
