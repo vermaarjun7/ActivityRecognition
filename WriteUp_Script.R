@@ -1,4 +1,6 @@
+#R script
 
+#Set the working directory
 setwd("C:\\Users\\Desktop\\Practical Machine Learning\\WriteUp")
 
 library(graphics)
