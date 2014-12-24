@@ -171,7 +171,7 @@ hr {
 
 <h3>Analysis Summary</h3>
 
-<p>Without the codebook of the input data nor domain knowledge of the subject, I treated the features as they are, even though the data set probably should be separated into 2 data files: point-of-time versus aggregated level, b/c the derived features look like only populated when <em>new_windows = â€œyesâ€</em>, and might be derived from the same <em>window_num</em>. Only 6 out of 152 features in <em>new_windows = â€œyesâ€</em>  with NA rate more than 95% versus 100 out of 152 features with the same threshold in <em>new_windows = â€œnoâ€</em>. Anyhow, in the analysis, I focused on the 152 numeric-formatted features and treated them as they are in the input data file, i.e. excluded â€œwindowâ€, and time-related features.</p>
+<p>Without the codebook of the input data nor domain knowledge of the subject, I treated the features as they are, even though the data set probably should be separated into 2 data files: point-of-time versus aggregated level, b/c the derived features look like only populated when <em>new_windows = "yes"</em>, and might be derived from the same <em>window_num</em>. Only 6 out of 152 features in <em>new_windows = "yes"</em>  with NA rate more than 95% versus 100 out of 152 features with the same threshold in <em>new_windows = â€œnoâ€</em>. Anyhow, in the analysis, I focused on the 152 numeric-formatted features and treated them as they are in the input data file, i.e. excluded â€œwindowâ€, and time-related features.</p>
 
 <p>The R script in the repo was designed to do following:</p>
 
