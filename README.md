@@ -82,7 +82,9 @@ Overall Statistics
 
 * Step 5&6. Applied the model to 20 observations from Testing data set, and submitted the answers (received 20/20).
 
-```sh  
+```sh 
+
+----Results---- 
 > predict(modFit.rf, x.outdata)
  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 
  B  A  B  A  A  E  D  B  A  A  B  C  B  A  E  E  A  B  B  B 
