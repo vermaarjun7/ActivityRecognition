@@ -1,4 +1,4 @@
-Practical Machine Learning
+Human Activity Recognition
 =========================== 
 
 Research on activity recognition has traditionally focused on discriminating between different activities
