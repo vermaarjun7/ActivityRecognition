@@ -3,7 +3,7 @@
 #----------------------------
 
 #Set the working directory
-setwd("C:\\Users\\Desktop\\Practical Machine Learning\\WriteUp")
+setwd("C:\\Users\\Desktop\\WriteUp")
 
 library(graphics)
 library(caret)
